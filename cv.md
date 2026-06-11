@@ -6,9 +6,9 @@ permalink: /cv/
 
 <h1 class="reveal">CV</h1>
 
-<a class="cv-download reveal" href="/cv/cv.pdf" download>
+<a class="cv-download reveal" href="{{ '/assets/files/Jenson_Wightman_CV_2025_S.pdf' | relative_url }}" target="_blank" rel="noopener" download>
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-  Download PDF
+  Download CV (PDF)
 </a>
 
 <div class="cv-section reveal">
