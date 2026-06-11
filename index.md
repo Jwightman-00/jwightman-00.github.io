@@ -12,7 +12,7 @@ permalink: /
   <h1>Hi, I'm <span class="gradient-text">Jenson</span>.</h1>
 
   <p class="hero-lead">
-    I'm a <span class="typed-role" data-typed='["Part III physics student.","mathematician at heart.","builder of small things.","curious about everything."]'><span class="typed-text"></span><span class="cursor">&nbsp;</span></span>
+    I'm a Part II Physics student at Cambridge and current intern at Infiniflux Ltd.
   </p>
 
   <div class="hero-actions">
@@ -35,15 +35,15 @@ permalink: /
 
 <section class="reveal">
   <p class="about-intro" style="font-size:1.08rem;color:var(--text-soft);max-width:60ch;">
-    This site collects projects I've worked on, notes from my studies, and occasional writing on things I find interesting. I'm broadly drawn to mathematical foundations, algorithms, and the places where the two meet.
+    This site collects projects I've worked on, notes from my studies, and occasional writing on things I find interesting, generally physics of AI related.
   </p>
 </section>
 
-<div class="facts reveal">
+<!-- <div class="facts reveal">
   <div class="fact"><div class="num" data-count="3" data-suffix="rd">3rd</div><div class="label">Part III, Cambridge</div></div>
   <div class="fact"><div class="num" data-count="5" data-suffix="+">5+</div><div class="label">Languages used</div></div>
   <div class="fact"><div class="num" data-count="100" data-suffix="%">100%</div><div class="label">Curiosity-driven</div></div>
-</div>
+</div> This is the fact cards, could be reused at somepoint -->
 
 <div class="section-head reveal">
   <h2>Recent projects</h2>
