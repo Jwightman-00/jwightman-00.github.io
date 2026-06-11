@@ -719,6 +719,19 @@ a:hover { color: var(--accent-hover); background-size: 100% 1.5px; }
    Responsive
 ----------------------------------------------- */
 @media (max-width: 600px) {
+  /*
+   * Fix: backdrop-filter on .site-header creates a new containing block for
+   * position:fixed descendants (per CSS spec). This traps nav.primary inside
+   * the header on mobile instead of letting it overlay the full viewport.
+   * Removing it on mobile (using a solid background instead) restores correct
+   * fixed positioning for the slide-out drawer. Desktop is unaffected.
+   */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg-soft);
+  }
+
   .menu-toggle { display: grid; }
   nav.primary {
     position: fixed;
