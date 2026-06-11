@@ -641,6 +641,24 @@ a:hover { color: var(--accent-hover); background-size: 100% 1.5px; }
 .cv-entry:hover { background: var(--accent-soft); }
 .cv-year { font-size: 0.8rem; color: var(--accent); font-weight: 600; padding-top: 0.15rem; font-variant-numeric: tabular-nums; }
 .cv-detail strong { font-weight: 600; color: var(--heading); }
+.cv-list { list-style: none; margin: 0.6rem 0 0; padding: 0; }
+.cv-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+.cv-list li:last-child { margin-bottom: 0; }
+.cv-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.62em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
 
 /* -----------------------------------------------
    Footer
