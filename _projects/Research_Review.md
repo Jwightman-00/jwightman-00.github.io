@@ -1,9 +1,8 @@
 ---
-title: Literature Review: Towards Quantum Computation of QFT
+title: "Literature Review: Towards Quantum Computation of QFT"
 date: 2025-05-04
-description: This was another of the projects completed as part of my physics undergrad at Cambridge. This particular project was a research review on the current state of quantum simulations of 1+1D QFT models. It also details the currenty cutting-edge of classical simulations of QFT and discusses the present state of 'quantum-advantage'
-tags: [python, PyTorch, Neural Networks, Machine learning]
-github: [PINN project](https://github.com/Jwightman-00/PINN-project)
+description: A research review on the current state of quantum simulations of 1+1D QFT models. It also details the current cutting-edge of classical simulations of QFT and discusses the present state of 'quantum advantage'. Completed as part of my physics undergrad at Cambridge.
+tags: [Quantum Computing, QFT, Quantum Simulation, Physics]
 ---
 
 ## Overview
@@ -13,8 +12,8 @@ This project covered the basic theory of neural networks. The PINN was construct
 
 
 ## Results
-The report contains all the theory, methodoloy and results of the PINNs Project.
-<a href="Literature Review.pdf" target="_blank">Click here to view my PINNs report</a>
+The full review is available as a PDF.
+<a href="{{ '/assets/files/Literature_Review.pdf' | relative_url }}" target="_blank" rel="noopener">Click here to read the literature review</a>
 
 ## Code
 

@@ -3,7 +3,7 @@ title: Physics-Informed Neural Networks
 date: 2025-05-04
 description: This was one of my projects completed as part of undergrad Physics at Cambridge. It covered the basics of PINNs and explored some of their uses and flaws. Its a good explanation of the basic concepts for someone unfamiliar with neural networks.
 tags: [python, PyTorch, Neural Networks, Machine learning]
-github: [PINN project](https://github.com/Jwightman-00/PINN-project)
+github: https://github.com/Jwightman-00/PINN-project
 ---
 
 ## Overview
@@ -14,7 +14,7 @@ This project covered the basic theory of neural networks. The PINN was construct
 
 ## Results
 The report contains all the theory, methodoloy and results of the PINNs Project.
-<a href="PINN_Project_Report.pdf" target="_blank">Click here to view my PINNs report</a>
+<a href="{{ '/assets/files/PINN_Project_Report.pdf' | relative_url }}" target="_blank" rel="noopener">Click here to view my PINNs report</a>
 
 ## Code
 
