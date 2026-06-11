@@ -1,0 +1,341 @@
+/* -----------------------------------------------
+   Reset & Base
+----------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: "Georgia", serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* -----------------------------------------------
+   Layout
+----------------------------------------------- */
+.site-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* -----------------------------------------------
+   Header & Nav
+----------------------------------------------- */
+header {
+  padding: 2.5rem 0 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 3rem;
+}
+
+.site-title {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.site-title:hover { color: #555; }
+
+nav {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+nav a:hover, nav a.active { color: #1a1a1a; }
+
+/* -----------------------------------------------
+   Main Content
+----------------------------------------------- */
+main { min-height: 60vh; }
+
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 2.5rem 0 1rem;
+}
+
+h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover { text-decoration-color: #1a1a1a; }
+
+/* -----------------------------------------------
+   About page
+----------------------------------------------- */
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-meta {
+  margin-top: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.about-meta a { color: #666; }
+
+/* -----------------------------------------------
+   Item lists (projects, notes)
+----------------------------------------------- */
+.item-list { list-style: none; }
+
+.item-list li {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-list li:last-child { border-bottom: none; }
+
+.item-title {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.item-title:hover { text-decoration-color: #1a1a1a; }
+
+.item-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.2rem;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.4rem;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #f0f0f0;
+  color: #666;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  text-decoration: none;
+}
+
+/* -----------------------------------------------
+   Posts (Thoughts)
+----------------------------------------------- */
+.post-list { list-style: none; }
+
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.post-list li:last-child { border-bottom: none; }
+
+.post-date {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: #aaa;
+  white-space: nowrap;
+  min-width: 5rem;
+}
+
+.post-link {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.post-link:hover { text-decoration-color: #1a1a1a; }
+
+/* Individual post/item pages */
+.post-header { margin-bottom: 2.5rem; }
+
+.post-header h1 { margin-bottom: 0.5rem; }
+
+.post-header .post-date {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.post-content { font-size: 0.97rem; }
+
+.post-content h2 {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #1a1a1a;
+  margin: 2rem 0 0.8rem;
+}
+
+.post-content pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.post-content code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.85em;
+  background: #f5f5f5;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-content blockquote {
+  border-left: 2px solid #ddd;
+  padding-left: 1rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.post-content ul, .post-content ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* -----------------------------------------------
+   CV
+----------------------------------------------- */
+.cv-download {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  color: #555;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.cv-download:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.cv-section { margin-bottom: 2.5rem; }
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0 1.2rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.cv-entry:last-child { border-bottom: none; }
+
+.cv-year {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: #aaa;
+  padding-top: 0.1rem;
+}
+
+.cv-detail strong { font-weight: normal; font-style: italic; }
+
+/* -----------------------------------------------
+   Footer
+----------------------------------------------- */
+footer {
+  margin-top: 5rem;
+  padding: 1.5rem 0 2.5rem;
+  border-top: 1px solid #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  color: #bbb;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer a { color: #bbb; text-decoration-color: transparent; }
+footer a:hover { color: #888; }
+
+/* -----------------------------------------------
+   Responsive
+----------------------------------------------- */
+@media (max-width: 480px) {
+  nav { gap: 1rem; }
+  .cv-entry { grid-template-columns: 1fr; }
+  .cv-year { margin-bottom: 0.2rem; }
+}

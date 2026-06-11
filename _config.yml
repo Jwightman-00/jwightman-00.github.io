@@ -1,0 +1,49 @@
+title: J. Wightman
+description: Mathematics & Computer Science
+url: "https://jwightman.github.io"
+baseurl: ""
+
+author:
+  name: J. Wightman
+  email: jw2387@cam.ac.uk
+  affiliation: University of Cambridge
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /thoughts/:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
