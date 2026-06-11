@@ -1,7 +1,6 @@
 ---
-title: Algorithms
-course: Computer Science
-order: 1
+course: Particle and Nuclear Physics
+order: 5
 description: Sorting, graph algorithms, dynamic programming, and complexity.
 ---
 
