@@ -4,11 +4,14 @@ title: CV
 permalink: /cv/
 ---
 
-<h1>CV</h1>
+<h1 class="reveal">CV</h1>
 
-<a class="cv-download" href="/cv/cv.pdf" download>Download PDF</a>
+<a class="cv-download reveal" href="/cv/cv.pdf" download>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+  Download PDF
+</a>
 
-<div class="cv-section">
+<div class="cv-section reveal">
 <h2>Education</h2>
 <div class="cv-entry">
   <div class="cv-year">2022–2025</div>
@@ -19,7 +22,7 @@ permalink: /cv/
 </div>
 </div>
 
-<div class="cv-section">
+<div class="cv-section reveal">
 <h2>Projects</h2>
 <div class="cv-entry">
   <div class="cv-year">2025</div>
@@ -30,7 +33,7 @@ permalink: /cv/
 </div>
 </div>
 
-<div class="cv-section">
+<div class="cv-section reveal">
 <h2>Skills</h2>
 <div class="cv-entry">
   <div class="cv-year">Languages</div>

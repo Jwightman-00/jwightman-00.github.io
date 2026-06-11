@@ -2,14 +2,24 @@
 layout: default
 ---
 <article>
+  {% if page.collection == 'notes' %}
+    <a class="back-link" href="{{ '/notes/' | relative_url }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      All notes
+    </a>
+  {% else %}
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      All projects
+    </a>
+  {% endif %}
   <header class="post-header">
     <h1>{{ page.title }}</h1>
-    {% if page.tags %}
-    <div style="margin-top:0.5rem;">
-      {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-top:0.6rem;">
+      {% if page.date %}<span class="post-date">{{ page.date | date: "%Y" }}</span>{% endif %}
+      {% if page.tags %}{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif %}
+      {% if page.github %}<a href="{{ page.github }}" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:500;">GitHub ↗</a>{% endif %}
     </div>
-    {% endif %}
-    {% if page.date %}<div class="post-date" style="margin-top:0.5rem;">{{ page.date | date: "%Y" }}</div>{% endif %}
   </header>
   <div class="post-content">
     {{ content }}

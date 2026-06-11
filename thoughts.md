@@ -4,9 +4,10 @@ title: Thoughts
 permalink: /thoughts/
 ---
 
-<h1>Thoughts</h1>
+<h1 class="reveal">Thoughts</h1>
+<p class="reveal" style="color:var(--text-soft);max-width:54ch;margin-bottom:2rem;">Occasional writing — half-formed ideas, things I'm learning, and notes to my future self.</p>
 
-<ul class="post-list">
+<ul class="post-list reveal">
 {% for post in site.posts %}
   <li>
     <span class="post-date">{{ post.date | date: "%Y %b %-d" }}</span>
