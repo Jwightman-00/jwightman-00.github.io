@@ -1,11 +1,14 @@
 title: J.P. Wightman
 description: Part III Physics
-url: "https://jwightman.github.io"
+url: "https://jwightman-00.github.io"
 baseurl: ""
 
 author:
   name: Jenson P Wightman
   affiliation: University of Cambridge
+
+# Google Search Console verification token
+google_site_verification: 3NlxggG1OHqj4ZNW-JyKrAljCAavfpiRDTIKaPOHTpk
 
 # Collections
 collections:
