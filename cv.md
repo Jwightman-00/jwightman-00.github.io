@@ -8,7 +8,7 @@ permalink: /cv/
 <p class="reveal" style="color:var(--text-soft);max-width:54ch;margin-bottom:1.75rem;">Jenson Wightman — Physics, University of Cambridge. A summary is below; the full CV is available to download.</p>
 
 <div class="cv-actions reveal">
-  <a class="cv-download" href="{{ '/assets/files/Jenson_Wightman_CV_2025_S.pdf' | relative_url }}" target="_blank" rel="noopener" download>
+  <a class="cv-download" href="{{ '/assets/files/Jenson_Wightman_CV_2025_Website.pdf' | relative_url }}" target="_blank" rel="noopener" download>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
     Download full CV (PDF)
   </a>
