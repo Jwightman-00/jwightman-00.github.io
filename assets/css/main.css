@@ -173,14 +173,10 @@ main { min-height: 64vh; padding-bottom: 2rem; }
 }
 
 .site-title .mark {
-  width: 1.6rem; height: 1.6rem;
+  width: 1.65rem; height: 1.65rem;
   border-radius: 7px;
-  background: var(--gradient);
-  display: inline-grid;
-  place-items: center;
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 700;
+  object-fit: cover;
+  display: block;
   box-shadow: 0 4px 14px -4px var(--glow);
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
