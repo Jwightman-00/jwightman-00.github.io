@@ -1,0 +1,96 @@
+#separator:tab
+#html:false
+#tags column:3
+Natural units: ℏc in MeV·fm?	ℏc = 197 MeV·fm	units
+Natural units: ℏ in GeV·s?	ℏ = 6.6 × 10⁻²⁵ GeV·s	units
+Fine structure constant α in natural units?	α = e²/(4π) ≈ 1/137	qed units
+Conversion: 1 GeV⁻² in m²?	1 GeV⁻² = 3.89 × 10⁻³² m²	units
+Relativistic energy-momentum relation?	E² = p² + m²	kinematics
+Relativistic E and |p| (γ, β)?	E = γm, |p| = γβm	kinematics
+Kinetic energy (relativistic)?	T = E − m = (γ − 1)m	kinematics
+Four-momentum invariant?	p^μ p_μ = E² − |p|² = m²	kinematics
+Invariant mass for two-body decay X → 1+2?	M_X² = m₁² + m₂² + 2(E₁E₂ − |p₁||p₂|cos θ)	kinematics
+CM energy s for fixed target (E₁ ≫ m)?	s ≈ 2E₁m₂, so √s ≈ √(2E₁m₂)	kinematics colliders
+CM energy for symmetric collider?	√s = 2E	kinematics colliders
+Number remaining after time t?	N(t) = N(0) e^(−λt)	decays
+Activity?	A(t) = λN(t)	decays
+Half-life vs mean life τ?	τ_½ = (ln 2)/λ = 0.693 τ	decays
+Daughter rate equation in chain N₁→N₂→N₃?	dN₂/dt = λ₁N₁(t) − λ₂N₂(t)	decays
+Fermi's Golden Rule?	Γ = 2π|M_fi|² ρ(E_f)	scattering decays
+Width-lifetime relation (natural units)?	Γ = 1/τ = λ	decays widths
+Branching fraction?	B_f = Γ_f / Γ, with Σ B_f = 1	decays widths
+Cross-section in terms of rate Γ and flux Φ?	σ = Γ/Φ	scattering
+Beam attenuation (thick target, length L)?	N = N₀ e^(−σnL)	scattering
+Mean free path / interaction length?	λ_int = 1/(nσ)	scattering
+Born approximation (relativistic) dσ/dΩ?	dσ/dΩ = E²/(2π)² |∫ e^(−iq·r) V(r) d³r|²	scattering
+Rutherford differential cross-section?	dσ/dΩ = Z²α² / (4E² sin⁴(θ/2))	scattering
+Momentum transfer squared (elastic, m≈0)?	q² = −4 E_i E_f sin²(θ/2)	scattering
+Breit-Wigner resonance cross-section?	σ = (πg/p_i²) · Γ_{Z→i} Γ_{Z→f} / [(E−E₀)² + Γ²/4]	resonances
+Spin factor g in Breit-Wigner?	g = (2J_Z + 1) / [(2J_a+1)(2J_b+1)]	resonances
+Peak resonance cross-section (E = E₀)?	σ_peak = 4π g Γ_i Γ_f / (p_i² Γ²)	resonances
+Klein-Gordon equation?	∂²ψ/∂t² = (∇² − m²)ψ	standard-model
+Yukawa potential?	V(r) = −(g²/4π) e^(−mr)/r	standard-model
+Range of force from mass-m exchange boson?	r ~ 1/m = ℏ/(mc)	standard-model
+Virtual particle propagator (matrix element)?	M_fi = g²/(q² − m²)	feynman
+Massless exchange propagator?	M_fi = g²/q²	qed feynman
+Tracker momentum from B and sagitta?	p = 0.3 B (L²/(8s))	detectors
+Tracker momentum resolution scaling?	σ_p/p ∝ p	detectors
+Calorimeter energy resolution?	σ_E/E ∝ 1/√E	detectors
+Synchrotron radiation per orbit (scaling)?	ΔE_orbit ∝ E⁴/(m⁴ r)	colliders
+α_s in terms of g_s?	α_s = g_s² / (4π)	qcd
+α_W in terms of g_W?	α_W = g_W² / (4π) ≈ 1/30	weak
+QCD potential between q and q̄?	V_QCD = −(4/3) α_s/r + kr, k ≈ 1 GeV/fm	qcd
+Cross-section σ(e⁺e⁻ → μ⁺μ⁻) (spinless)?	σ = 4πα²/s	qed
+Spin-correct dσ/dΩ for e⁺e⁻ → μ⁺μ⁻?	dσ/dΩ = (α²/4s)(1 + cos²θ)	qed
+Spin-correct σ(e⁺e⁻ → μ⁺μ⁻)?	σ = 4πα²/(3s)	qed
+Ratio R = σ(e⁺e⁻ → hadrons)/σ(μ⁺μ⁻)?	R = 3 Σ_i Q_i² (kinematically-accessible quarks)	qed qcd
+R with first-order QCD correction?	R = 3 Σ Q_q² (1 + α_s/π)	qcd
+Meson mass formula (L=0)?	M_qq̄ = m₁ + m₂ + A (S₁·S₂)/(m₁ m₂)	hadrons
+Meson mass for J^P = 0⁻?	M = m₁ + m₂ − 3A/(4 m₁ m₂)	hadrons
+Meson mass for J^P = 1⁻?	M = m₁ + m₂ + A/(4 m₁ m₂)	hadrons
+Baryon mass formula (L=0, equal masses)?	M_qqq = 3m_q + A' Σ_{i<j} (S_i·S_j)/m_q²	hadrons
+Quark magnetic moment?	μ_q = q_q ℏ /(2 m_q)	hadrons
+Bohr magneton?	μ_B = eℏ/(2m_e)	atomic
+Nuclear magneton?	μ_N = eℏ/(2m_p)	nuclear
+Parity of composite (orbital L)?	P = P₁ P₂ (−1)^L	parity
+Parity of qq̄ meson (L=0)?	P = P_q P_q̄ (−1)^L = −1	hadrons
+Fermi theory: g_W² vs G_F (precise)?	g_W²/(8 m_W²) = G_F/√2	weak
+Fermi constant value?	G_F = 1.166 × 10⁻⁵ GeV⁻²	weak
+Sargent's rule (muon decay)?	Γ_μ = G_F² m_μ⁵ / (192 π³)	weak decays
+W → e⁻ν̄_e partial width?	Γ(W⁻ → e⁻ν̄_e) = g_W² m_W /(48π) = G_F m_W³/(6√2 π)	weak
+β-decay e⁻ momentum spectrum?	dΓ/dp_e = (G_F²/(2π³)) (E₀ − E_e)² p_e²	weak
+β-decay total rate (relativistic)?	Γ = G_F² E₀⁵ / (60 π³)	weak
+Helicity definition?	h = (S·p)/|p|	weak
+Cabibbo rotation?	d' = d cos θ_C + s sin θ_C; s' = −d sin θ_C + s cos θ_C	weak ckm
+Cabibbo angle?	θ_C ≈ 13°	weak
+GWS: g_W relation?	g_W = e / sin θ_W	electroweak
+GWS: g_Z relation?	g_Z = g_W / cos θ_W	electroweak
+GWS: m_Z vs m_W?	m_Z = m_W / cos θ_W	electroweak
+GWS: m_W from G_F and θ_W?	m_W = (√2 e² / (8 G_F sin² θ_W))^(1/2)	electroweak
+Z resonance peak cross-section?	σ_peak = (12π/m_Z²) Γ_ee Γ_{ff̄} / Γ_Z²	electroweak resonances
+Two-flavour neutrino oscillation probability?	P(ν_μ → ν_e) = sin²(2θ) sin²[Δm² L /(4E)]	neutrinos
+Practical neutrino oscillation formula?	P = sin²(2θ) sin²(1.27 Δm²[eV²] L[km] / E_ν[GeV])	neutrinos
+Cherenkov angle?	cos θ_C = 1/(nβ)	detectors
+Nuclear binding energy definition?	m(A,Z) = Z m_p + (A−Z) m_n − B	nuclear
+Semi-empirical mass formula (B)?	B = a_V A − a_S A^(2/3) − a_C Z²/A^(1/3) − a_A (N−Z)²/A + δ(A)	nuclear semf
+SEMF coefficients (MeV)?	a_V=15.8, a_S=18.0, a_C=0.72, a_A=23.5, a_P=33.5	nuclear semf
+SEMF pairing term δ(A)?	+a_P A^(−3/4) (e-e); −a_P A^(−3/4) (o-o); 0 otherwise	nuclear semf
+Form factor (definition)?	F(q²) = ∫ ρ(r) e^(iq·r) d³r	nuclear
+Fermi nuclear charge distribution?	ρ(r) = ρ(0) / [1 + e^((r−R)/s)]	nuclear
+Nuclear radius vs A?	R = r₀ A^(1/3), r₀ ≈ 1.2 fm	nuclear
+Coulomb energy difference (mirror nuclei)?	ΔE_C = (3/5) A α / R	nuclear
+Electric quadrupole moment?	Q = (1/e) ∫ (3z² − r²) ρ(r) d³r	nuclear
+Nuclear magnetic moment (single nucleon)?	μ = (μ_N/ℏ)(g_L L + g_s s)	nuclear shell
+Nucleon g-factors (p, n)?	p: g_L=1, g_s=+5.586; n: g_L=0, g_s=−3.826	nuclear shell
+Schmidt limits (g_J for j = L ± 1/2)?	g_J = g_L ± (g_s − g_L)/(2L+1)	nuclear shell
+Spin-orbit splitting?	ΔE = ½ (2L+1) V_so	nuclear shell
+Rotational level energy (even-even)?	E = ℏ² J(J+1) / (2 I_eff)	nuclear excited
+E(4⁺)/E(2⁺) ratio (rotational)?	10/3 ≈ 3.33	nuclear excited
+α-decay Gamow factor?	G = ∫_R^{R'} √(2m_α(V(r) − E₀)/ℏ²) dr	nuclear alpha
+α-decay tunnelling probability?	P = e^(−2G)	nuclear alpha
+Geiger-Nuttall law?	ln λ ≈ −Z'/√E₀ + const	nuclear alpha
+β-decay rate with Fermi function?	Γ = (G_F² |M_nuc|² / (2π³)) ∫₀^{E₀} (E₀−E_e)² E_e² F(Z_Y, E_e) dE_e	nuclear beta
+Kurie plot?	√[(dΓ/dp_e) / p_e²] ∝ (E₀ − E_e)	nuclear beta
+γ-decay E1 rate estimate?	Γ(E1) ≈ (4/3) α E_γ³ R²	nuclear gamma
+γ-decay parity (EL, ML)?	EL: P=(−1)^L; ML: P=(−1)^(L+1)	nuclear gamma
+Spontaneous fission instability criterion?	Z²/A > 2 a_S / a_C ≈ 47	nuclear fission

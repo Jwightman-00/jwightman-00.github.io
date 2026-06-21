@@ -1,0 +1,94 @@
+#separator:tab
+#html:true
+#tags column:3
+What is the paraxial approximation, and when is it valid?	The approximation sin θ ≈ θ ≈ tan θ for rays travelling at small angles to the optical axis. Valid when θ ≪ 1 rad. Underpins ray-transfer matrix optics.	geometric_optics
+Focal length of a spherical mirror in the paraxial approximation	f = R/2, where R is the radius of curvature. Derived from geometric construction; fails outside paraxial regime (spherical aberration).	geometric_optics
+Ray-transfer matrix for free-space propagation distance d	(1, d; 0, 1) — top row gives output position y' = y + θd, bottom row gives output angle θ' = θ.	geometric_optics
+Ray-transfer matrix for a thin lens of focal length f	(1, 0; -1/f, 1) — position unchanged at the lens, angle deflected by -y/f.	geometric_optics
+Ray-transfer matrix for refraction at a spherical interface (n₁→n₂, radius R)	(1, 0; (n₁-n₂)/(n₂R), n₁/n₂)	geometric_optics
+Snell's law	n₁ sin θ₁ = n₂ sin θ₂, with angles measured from the normal to the interface.	geometric_optics
+Critical angle for total internal reflection	θ_c = sin⁻¹(n₂/n₁), valid only when n₁ > n₂. Light incident from the denser medium at θ ≥ θ_c is totally reflected.	geometric_optics
+Wave equation (scalar wave optics)	∇²u − (1/c²) ∂²u/∂t² = 0, where u(r,t) is the real scalar wavefunction and c = c₀/n.	wave_optics
+Helmholtz equation	∇²U + k²U = 0, where U(r) is the complex amplitude and k = 2πν/c is the wavenumber. Obtained from the wave equation for monochromatic light U(r,t) = U(r)exp(j2πνt).	wave_optics
+Optical intensity in terms of complex amplitude	I(r) = |U(r)|². For monochromatic light this is time-independent. Time average of 2u² gives the same result.	wave_optics
+Definition of wavefronts	Surfaces of constant phase φ(r) = 2πq. The wavefront normal ∇φ gives the direction of propagation.	wave_optics
+Complex degree of temporal coherence g(τ)	g(τ) = ⟨U*(t)U(t+τ)⟩ / ⟨|U(t)|²⟩. Satisfies 0 ≤ |g(τ)| ≤ 1; quantifies how correlated the field is with itself after delay τ.	coherence
+Coherence time τ_c (power-equivalent width definition)	τ_c = ∫₋∞^∞ |g(τ)|² dτ. Coherence length: l_c = c·τ_c.	coherence
+Coherence time vs. spectral width relation	τ_c ≈ 1/Δν (order of magnitude). Lorentzian: τ_c = 1/(πΔν). Gaussian: τ_c = √(2 ln 2/π)/Δν.	coherence
+|g(τ)| for an exponential (Lorentzian spectrum)	|g(τ)| = exp(-|τ|/τ_c). Corresponds to a Lorentzian power spectrum of FWHM Δν = 1/(πτ_c).	coherence
+|g(τ)| for a Gaussian spectrum	|g(τ)| = exp(-πτ²/(2τ_c²)). Corresponds to a Gaussian power spectrum.	coherence
+Two-wave interference intensity formula	I = I₁ + I₂ + 2√(I₁I₂) Re[g(τ)] = I₁ + I₂ + 2√(I₁I₂)|g(τ)|cos(2π ν̄ τ + arg g). For equal intensities: I = 2I₀[1 + |g(τ)|cos(2π ν̄ τ)].	coherence
+Fringe visibility	𝒱 = (I_max − I_min)/(I_max + I_min) = 2√(I₁I₂)|g(τ)|/(I₁+I₂). For equal intensities, 𝒱 = |g(τ)|.	coherence
+Gaussian beam complex amplitude	U(r) = (A₀ W₀/W(z)) exp(-ρ²/W²(z)) exp(-jkz - jkρ²/(2R(z)) + jζ(z)), where ρ = √(x²+y²).	beam_optics
+Gaussian beam width W(z)	W(z) = W₀ √(1 + (z/z₀)²). At z = z₀, W = √2 W₀.	beam_optics
+Gaussian beam Rayleigh range z₀	z₀ = πW₀²/λ. Sets the longitudinal scale over which the beam stays roughly collimated.	beam_optics
+Gaussian beam wavefront radius R(z)	R(z) = z[1 + (z₀/z)²]. R → ∞ at z = 0 (planar) and z → ∞ (spherical wave).	beam_optics
+Gaussian beam divergence half-angle	θ₀ = λ/(πW₀) = W₀/z₀ (far-field). Smaller waists diverge faster — diffraction limit.	beam_optics
+Gouy phase ζ(z)	ζ(z) = tan⁻¹(z/z₀). Extra π phase shift accumulated by a Gaussian beam compared to a plane wave on traversing the focus.	beam_optics
+Beam parameter q(z)	q(z) = z + jz₀; equivalently 1/q = 1/R - jλ/(πW²). Linear in z; transforms by ABCD law: q' = (Aq+B)/(Cq+D).	beam_optics
+M² beam-quality factor	M² = (2W_m · 2θ_m)/(4λ/π). Ideal Gaussian: M² = 1. Real beams M² ≥ 1.	beam_optics
+Focused waist of a Gaussian beam (z₀ ≫ f limit)	W₀' ≈ fλ/(πW₀). Lens at z = 0 with incoming collimated beam of waist W₀.	beam_optics
+Plane-wave decomposition (angular spectrum)	Any field f(x,y) at z=0 can be written as a 2D Fourier integral over plane waves with transverse spatial frequencies (νₓ, ν_y), where (kₓ, k_y) = 2π(νₓ, ν_y).	fourier_optics
+Spatial frequency / angle relation	θ_x ≈ λν_x in the paraxial regime. Spatial frequencies map directly to propagation angles.	fourier_optics
+Transfer function of free space	H(ν_x, ν_y) = exp(-jk_z d), with k_z = √(k² - k_x² - k_y²) = 2π√(λ⁻² - ν_x² - ν_y²).	fourier_optics
+Fresnel approximation transfer function	H(ν_x, ν_y) ≈ H₀ exp[jπλd(ν_x² + ν_y²)], where H₀ = exp(-jkd). Valid in the near field, paraxial regime.	fourier_optics
+Fresnel impulse response (free-space propagator)	h(x,y) = (h₀/jλd) exp[-jk(x²+y²)/(2d)], h₀ = exp(-jkd). Convolving with input field f(x,y) gives output g(x,y).	fourier_optics
+Fraunhofer (far-field) diffraction	g(x,y) ∝ F(x/(λd), y/(λd)) — output is the Fourier transform of the aperture, evaluated at spatial frequencies (x/(λd), y/(λd)). Valid for d ≫ a²/λ.	fourier_optics
+Lens as Fourier transformer	A thin lens of focal length f produces, at its back focal plane, the Fourier transform of the field at its front focal plane: g(x,y) ∝ F(x/(λf), y/(λf)).	fourier_optics
+4f imaging system	Two lenses (f₁, f₂) separated by f₁+f₂; object at front focal plane of L₁, image at back focal plane of L₂. Lateral magnification m = -f₂/f₁. Ray matrix is diagonal (perfect imaging).	fourier_optics
+Diffraction-limited resolution (Abbe / Rayleigh)	Δx_min ≈ 0.61 λ/NA (Rayleigh criterion). Minimum resolvable separation for an imaging system of numerical aperture NA.	fourier_optics
+Confocal microscopy principle	A pinhole at the conjugate image plane rejects out-of-focus light. Improves axial resolution and sectioning compared to widefield microscopy.	microscopy
+STED superresolution principle	Stimulated emission depletion: a doughnut-shaped depletion beam suppresses fluorescence except at the very centre, beating the diffraction limit. Resolution scales as ~λ/(2NA·√(1+I/I_sat)).	microscopy
+STORM/PALM principle	Stochastic activation and localisation of single fluorophores. Centroid fitting localises each emitter to ~nm precision; image built up from many sparse frames.	microscopy
+Origin of nonlinear polarisation	Anharmonic oscillator: V = ½k₀x² + ⅓k₁x³ + ¼k₂x⁴+… The cubic and higher terms produce displacement components at harmonics of the driving frequency, giving P(E) = ε₀(χ⁽¹⁾E + 2dE² + 4χ⁽³⁾E³ + …).	nonlinear_optics
+Why χ⁽²⁾ vanishes in centrosymmetric media	Inversion symmetry requires P(-E) = -P(E), forbidding all even powers of E. So χ⁽²⁾ = χ⁽⁴⁾ = … = 0. χ⁽³⁾ can still be nonzero.	nonlinear_optics
+Frequency components in three-wave mixing	For E(t) = Re[E(ω₁)e^(iω₁t) + E(ω₂)e^(iω₂t)], P⁽²⁾ contains components at: 0 (rectification), 2ω₁, 2ω₂ (SHG), ω₁+ω₂ (SFG), ω₁-ω₂ (DFG).	nonlinear_optics
+Frequency-matching condition	ω₃ = ω₁ + ω₂ — conservation of energy for the photons involved.	nonlinear_optics
+Phase-matching condition	k₁ + k₂ = k₃ — conservation of momentum. Required for sustained energy transfer over the crystal length; otherwise the generated wave dephases and oscillates.	nonlinear_optics
+Coherence length for nonlinear conversion	l_c = π/|Δk|, where Δk = k₁ + k₂ - k₃. Beyond this length, the generated power oscillates instead of growing.	nonlinear_optics
+Type-I birefringent phase matching	Both fundamental photons have the same (ordinary) polarisation; the generated photon has the orthogonal (extraordinary) polarisation. Phase matching achieved by tuning the propagation angle θ relative to the optic axis.	nonlinear_optics
+Manley–Rowe relations	d(I₁/ω₁)/dz = d(I₂/ω₂)/dz = -d(I₃/ω₃)/dz. Equivalent to photon-number conservation: photons at ω₃ are created at the rate at which photons at ω₁ and ω₂ are destroyed.	nonlinear_optics
+Pockels effect (linear electro-optic)	χ⁽²⁾(ω;ω,0): a DC field E₀ modifies the refractive index linearly: n(E₀) ≈ n₀ + (χ⁽²⁾/(2n₀))E₀. Only in non-centrosymmetric crystals.	nonlinear_optics
+Half-wave voltage V_π of a Pockels cell	V_π is the voltage required for the two principal polarisations to acquire a relative phase shift of π. Between crossed polarisers: I_out = I_in sin²(πV/(2V_π)).	nonlinear_optics
+Optical Kerr effect	χ⁽³⁾(ω;ω,ω,-ω): refractive index depends on intensity, n(I) = n₀ + n₂I, where n₂ = χ⁽³⁾/(2n₀²ε₀c). Allowed in any medium (including centrosymmetric).	nonlinear_optics
+Self-phase modulation	A pulse passing through a Kerr medium acquires a time-dependent phase φ(t) = ω₀t - k₀z[n₀ + n₂I(t)], so the instantaneous frequency ω(t) = ω₀ - k₀z·n₂·dI/dt is chirped: red leading edge, blue trailing edge.	nonlinear_optics
+Self-focusing in a Kerr medium	A Gaussian intensity profile produces a parabolic refractive-index profile (highest on axis), acting as a positive lens of focal length f_K = w²/(4n₂I₀d) for a slab of thickness d.	nonlinear_optics
+Critical power for self-focusing	P_cr ≈ αλ²/(4πn₀n₂), with α ≈ 1.9 (Chiao-Garmire-Townes). Beam collapses if P > P_cr.	nonlinear_optics
+Optical soliton	Solution of the nonlinear Schrödinger equation in which Kerr self-phase modulation exactly balances anomalous group-velocity dispersion. Profile: A(x,z) = A₀ sech(x/W₀) exp(-jz/(4z₀)).	nonlinear_optics
+Group velocity dispersion (GVD)	GVD = ∂²k/∂ω² = (1/c)·(2 ∂n/∂ω + ω ∂²n/∂ω²). Units: time²/distance. Anomalous GVD < 0; normal GVD > 0.	nonlinear_optics
+Acousto-optic Bragg condition	2Λ sin θ_B = λ/n, where Λ is the acoustic wavelength and θ_B the Bragg angle inside the medium. Diffracted beam is frequency-shifted by ±f_acoustic.	nonlinear_optics
+Three modes of light-matter interaction	(1) Spontaneous emission: P_sp = (c/V)σ(ν), independent of photon number. (2) Stimulated emission: P_st = n(c/V)σ(ν). (3) Absorption: P_ab = n(c/V)σ(ν). Stimulated rates equal absorption rates per atom.	lasers
+Transition cross section σ(ν)	Effective area presented by an atom for absorption/stimulated emission. Related to spontaneous lifetime by σ(ν) = (λ²/(8πt_sp))g(ν), where g(ν) is the normalised lineshape.	lasers
+Pumping rate equations (no radiation)	dN₂/dt = R₂ - N₂/τ₂; dN₁/dt = -R₁ - N₁/τ₁ + N₂/τ₂₁. Steady-state population inversion: N₀ = R₂τ₂(1 - τ₁/τ₂₁) + R₁τ₁.	lasers
+Conditions for large population inversion	(1) Large pumping rates R₁, R₂. (2) Long upper-state lifetime τ₂. (3) Short lower-state lifetime τ₁ ≪ τ₂₁. (4) τ₂₁ ≈ t_sp ≪ τ₂₀ (radiative decay dominates).	lasers
+Rate equations with radiation	Add the term ±(N₂-N₁)W_i to each, where W_i = φσ(ν) is the stimulated transition rate. Steady-state solution: N = N₀/(1 + τ_s W_i).	lasers
+Saturation time constant	τ_s = τ₂ + τ₁(1 - τ₂/τ₂₁). Always positive. Sets the photon-flux density at which the gain saturates: φ_s(ν) = 1/(τ_s σ(ν)).	lasers
+Saturated gain coefficient	γ(ν) = γ₀(ν)/(1 + φ/φ_s(ν)). γ₀ = N₀σ is the small-signal (unsaturated) gain.	lasers
+Two conditions for laser oscillation	(1) Gain condition: γ₀(ν) > α_r — round-trip gain exceeds round-trip loss. (2) Phase condition: 2kd + 2φ(ν)d = 2πq — round-trip phase is an integer multiple of 2π.	lasers
+Total round-trip loss coefficient α_r	α_r = α_s + α_m1 + α_m2, where α_mi = (1/(2d))ln(1/Rᵢ) is the loss coefficient associated with mirror i.	lasers
+Photon lifetime τ_p	τ_p = 1/(α_r c). The 1/e decay time of light intensity in an empty (unpumped) cavity. Higher loss → shorter τ_p → broader resonator linewidth.	lasers
+Threshold population inversion	N_t = α_r/σ(ν) = 1/(cτ_p σ(ν)). The minimum inversion needed for the gain to overcome the round-trip loss.	lasers
+Steady-state laser photon flux above threshold	φ = φ_s(ν)[γ₀(ν)/α_r - 1] for γ₀ > α_r; φ = 0 below threshold. Output flux is φ × (α_m/α_r).	lasers
+Gain clamping	Above threshold, the saturated gain is clamped to equal the loss: γ(ν) = α_r. Any further increase in pumping shows up as more output power, not more gain.	lasers
+Resonance frequencies of a Fabry–Perot resonator	ν_q = q·c/(2nd), q = 1, 2, 3,... Free spectral range: ν_F = c/(2nd).	resonators
+Finesse of a Fabry–Perot resonator	ℱ = π√|r|/(1-|r|), where |r|² is the round-trip intensity attenuation. For low losses, ℱ ≈ π/(α_r d).	resonators
+Spectral width of resonator modes	δν ≈ ν_F/ℱ. Higher finesse → sharper resonances. Quality factor Q = ν₀/δν.	resonators
+Airy function for resonator transmission	I/I_max = 1/[1 + (2ℱ/π)² sin²(φ/2)], where φ = 2kd is the round-trip phase. Sharply peaked at resonances for high ℱ.	resonators
+Stability condition for spherical-mirror resonator	0 ≤ g₁g₂ ≤ 1, where gᵢ = 1 - d/Rᵢ. Beyond this region the beam diverges away with each round trip.	resonators
+Special spherical-mirror resonator configurations	Planar: g₁=g₂=1 (R=∞). Confocal: g₁=g₂=0 (R=d). Concentric: g₁=g₂=-1 (R=d/2). Symmetric: g₁=g₂.	resonators
+Number of laser longitudinal modes	M ≈ B/ν_F, where B is the spectral width over which γ₀ > α_r. Homogeneously broadened: ultimately one mode (single-mode operation). Inhomogeneously broadened: multimode possible due to spectral hole burning.	lasers
+Spectral hole burning	A strong intracavity field at one frequency selectively saturates the gain of the atoms resonant at that frequency, creating a localised dip in the gain profile. Allows simultaneous oscillation of multiple modes in inhomogeneously broadened lasers.	lasers
+Schawlow–Townes laser linewidth	Δν_l ~ 1/(τ_p N_ph). Quantum-limited linewidth from random phase kicks due to spontaneous emission. Improves with high power and high Q.	lasers
+Mode locking principle	Lock the relative phases of many longitudinal modes so they interfere constructively at periodic intervals. Produces a train of ultrashort pulses with repetition period 2d/c and pulse duration ~1/(M·ν_F) for M locked modes.	lasers
+Frequency comb	Output of a mode-locked laser: a series of equally spaced spectral lines at frequencies ν_n = n·f_rep + f_CEO, where f_rep = c/(2d) is the repetition rate and f_CEO is the carrier-envelope offset. Foundation of optical clocks.	lasers
+Self-consistency condition for planar mirror waveguide	(2π/λ)·2d sin θ = 2πm. Bounce angles: sin θ_m = mλ/(2d), m = 1, 2, 3,…	guided_optics
+Propagation constant in a planar mirror waveguide	β_m² = k² - m²π²/d², so β_m = k cos θ_m. Higher-order modes have smaller β (slower along z).	guided_optics
+Self-consistency for dielectric planar waveguide	(2π/λ)·2d sin θ - 2φ_r = 2πm, where φ_r is the phase shift from total internal reflection. m = 0, 1, 2,…	guided_optics
+Numerical aperture of a planar/fibre waveguide	NA = √(n₁² - n₂²). Equals sin of the half-angle of the acceptance cone in air.	guided_optics
+Number of TE modes in a dielectric slab waveguide	M ≈ ⌈2d·NA/λ₀⌉. There is no cut-off for the m=0 mode in a symmetric waveguide; it always propagates.	guided_optics
+Single-mode condition (planar dielectric)	ν > ν_c = c₀/(2d·NA), or equivalently 2d·NA/λ₀ < 1. The fundamental m=0 mode always propagates; cut-offs apply to higher modes only.	guided_optics
+Step-index fibre V-parameter	V = (2πa/λ₀)·NA, where a is the core radius. Single-mode fibre when V < 2.405 (first zero of J₀).	guided_optics
+Modal dispersion in multimode fibres	Different transverse modes have different group velocities, broadening pulses. Overcome by using single-mode fibre or graded-index profiles.	guided_optics
+Quantum optics levels of description	Ray < wave < electromagnetic < quantum. Ray: λ→0 limit. Wave: scalar U(r,t). EM: full Maxwell with vector E, B and polarisation. Quantum: photons, field operators, coherent/squeezed states.	overview
+Beat frequency in optical heterodyning	Mixing two waves at ν₁, ν₂ on a square-law detector gives I(t) = I₁ + I₂ + 2√(I₁I₂)cos[2π(ν₂-ν₁)t]. Used for sensitive frequency/velocity measurement.	coherence
+Doppler shift in optical heterodyning	Reflected wave from object moving at velocity v: Δν = ±(2v/c)ν₀. Basis of coherent lidar and laser Doppler vibrometry.	coherence
