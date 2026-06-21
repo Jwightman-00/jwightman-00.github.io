@@ -38,7 +38,6 @@ description: Flashcards, a handout, key derivations and seven mock papers with s
   <li><a class="file" href="/assets/notes/aqo/AQO_Solutions_5.pdf" target="_blank" rel="noopener"><span class="file-name">AQO Solutions 5</span><span class="file-ext">PDF</span></a></li>
   <li><a class="file" href="/assets/notes/aqo/AQO_Mock_6.pdf" target="_blank" rel="noopener"><span class="file-name">AQO Mock 6</span><span class="file-ext">PDF</span></a></li>
   <li><a class="file" href="/assets/notes/aqo/AQO_Solutions_6.pdf" target="_blank" rel="noopener"><span class="file-name">AQO Solutions 6</span><span class="file-ext">PDF</span></a></li>
-  <li><a class="file" href="/assets/notes/aqo/AQO_Mock_7.tex" target="_blank" rel="noopener"><span class="file-name">AQO Mock 7</span><span class="file-ext">TeX</span></a></li>
-  <li><a class="file" href="/assets/notes/aqo/AQO_Solutions_7.tex" target="_blank" rel="noopener"><span class="file-name">AQO Solutions 7</span><span class="file-ext">TeX</span></a></li>
+  <li><a class="file" href="/assets/notes/aqo/AQO_Mock_7.pdf" target="_blank" rel="noopener"><span class="file-name">AQO Mock 7</span><span class="file-ext">PDF</span></a></li>
+  <li><a class="file" href="/assets/notes/aqo/AQO_Solutions_7.pdf" target="_blank" rel="noopener"><span class="file-name">AQO Solutions 7</span><span class="file-ext">PDF</span></a></li>
 </ul>
-<p class="note-caption">Mock 7 is provided as LaTeX source rather than a compiled PDF.</p>
