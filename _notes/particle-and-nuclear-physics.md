@@ -6,7 +6,7 @@ description: Flashcards and a cheat sheet.
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Particle and Nuclear Physics materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p> PNP is another course somewhat heavy on rote-learning, so use the flaschards! The cheat sheet was nice to look at right before the exam, if nothing else. Many of the topics in PNP aren't as complicated as they might seem and just need very simple methods to be understood (EM transitions, shell model etc). Tina explains them well but a second look at them post-lecture might be needed.</p>
 </div>
 
 <h2>Flashcards</h2>

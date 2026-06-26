@@ -6,7 +6,7 @@ description: Flashcards, a handout, key derivations and seven mock papers with s
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Advanced and Quantum Optics materials here. A line or two on what the course covered, how you used these resources, and anything worth flagging before someone dives in.</p>
+  <p>The AQO course was new for 2026, so I made the most resources to revise this course. I used Claude to compile a handout from the (over 460!) course slides, that I tweaked. Particularly, useful were the mock past papers and flascards. There is a degree of rote learning to this course so flashcards are essential. </p>
 </div>
 
 <h2>Flashcards</h2>

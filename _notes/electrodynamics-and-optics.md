@@ -6,7 +6,7 @@ description: Flashcards, a course summary and key derivations.
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Electrodynamics and Optics materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p>A course with lots to know! Flaschards were incredibly useful just to make sure I knew all the small topics. The course summary and 'key derivations' were particularly useful to review before the exam. Good physical intuition is particularly useful in OE, so I'd spend a while thinking over the concepts/problems in the course. I often found that several OE exam questions (particularly section A) could be answered with strong intuition alone instead of knowledge from the course </p>
 </div>
 
 <h2>Flashcards</h2>

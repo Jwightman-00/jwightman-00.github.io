@@ -6,7 +6,7 @@ description: A revision guide and an exam analysis.
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Statistical Mechanics materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p> In hindsight, I might have made a flaschard set for StatMech (I may add one later for convenience). SM is a pretty fundamental course (obviously) and if you just understand the basics well that should take you a fair distance. Looking at optional courses, there are some links between SM and SCM so that may be somethin to consider.</p>
 </div>
 
 <h2>Revision Guides &amp; Summaries</h2>

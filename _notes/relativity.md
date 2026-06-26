@@ -6,7 +6,7 @@ description: A cheat sheet and a methods / key-derivations reference.
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Relativity materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p> Its Relativity, expectedly a little tricky and sometimes hard to follow. One of the best things I did for this course was to spend a while at the start of michealmas getting my head round the notation of tensor calculus; it makes keeping up in lectures much easier. Do not try to remember equations index for index, just remember the 'shape' of the equation and fit the indices accordingly (practice with Christoffel symbols). I didn't think flashcards would be particularly useful for this course, but you might and Robert Martin has some good ones on his website [RM website]](https://reasonabledeviations.com/notes/II_astro/).</p>
 </div>
 
 <h2>Revision Guides &amp; Summaries</h2>

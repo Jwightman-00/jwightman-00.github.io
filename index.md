@@ -35,7 +35,7 @@ permalink: /
 
 <section class="reveal">
   <p class="about-intro" style="font-size:1.08rem;color:var(--text-soft);max-width:60ch;">
-    This site collects projects I've worked on, notes from my studies, and occasional writing on things I find interesting, generally physics of AI related.
+    This site collects projects I've worked on, notes from my studies, and occasional writing on things I find interesting, generally physics or AI related.
   </p>
 </section>
 

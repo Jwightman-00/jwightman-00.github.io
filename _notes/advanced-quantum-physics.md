@@ -6,7 +6,7 @@ description: An Anki flashcard deck covering the course.
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Advanced Quantum Physics materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p>The AQP handout is fairly comprehensive, and Ben released a new handout this year so I didn't use many other resources for this course, however I did find flashcards useful for this course just to keep ontop of it. My main recommendation would just be to get comfortable with the derivations in the handout/lectures and the exams will be fine. </p>
 </div>
 
 <h2>Flashcards</h2>

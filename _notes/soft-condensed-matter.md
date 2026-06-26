@@ -6,7 +6,7 @@ description: Flashcards, a summary, a revision guide, key derivations and an exa
 ---
 
 <div class="note-intro">
-  <p>Placeholder — write a short introduction to your Soft Condensed Matter materials here. A line or two on what the course covered and how you used these resources.</p>
+  <p> One of the more 'fun' courses. I found flaschards useful for the content of SCM and the 'key derivations' guide was useful for explaining some of the essentials of the course in plain terms. Make sure you understand the over-arching methods in SCM; all the chain stuff, PB equation (linearisation), Langevin derivations etc. There a quite a few neat tricks to be had in SCM that Gemini is quite good at finding and explaining. </p>
 </div>
 
 <h2>Flashcards</h2>
