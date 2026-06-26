@@ -6,7 +6,7 @@ permalink: /notes/
 
 <h1 class="reveal">Notes</h1>
 
-<p class="reveal" style="color:var(--text-soft);max-width:56ch;margin-bottom:2rem;">Throughout the course of part II physics, I made various summaries and flashcards for some courses. I also have several revision guides/resources that were made with the help of Claude and it seems a waste to not share them. Claude also generated some past papers for the new AQO course that I found helpful. </p>
+<p class="reveal" style="color:var(--text-soft);max-width:56ch;margin-bottom:2rem;">Throughout the course of part II physics, I made various summaries and flashcards for some courses. I also have several revision guides/resources that were made with the help of Claude and it seems a waste to not share them. Claude also generated some past papers for the new AQO course that I found helpful. For advice, make sure you review each lecture, some of the courses move fairly quickly and making you sure understood each lecture will save time in the long-run. I made summaries after each lecture, but even just spending 20 minutes going through the lecture would help. </p>
 
 {% assign note_courses = site.notes | map: 'course' | uniq %}
 {% for course in note_courses %}

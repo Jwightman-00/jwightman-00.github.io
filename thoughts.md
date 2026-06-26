@@ -5,7 +5,7 @@ permalink: /thoughts/
 ---
 
 <h1 class="reveal">Thoughts</h1>
-<p class="reveal" style="color:var(--text-soft);max-width:54ch;margin-bottom:2rem;">Occasional writing — half-formed ideas, things I'm learning, and notes to my future self.</p>
+<p class="reveal" style="color:var(--text-soft);max-width:54ch;margin-bottom:2rem;">Occasional writing — half-formed ideas and things I'm learning.</p>
 
 <ul class="post-list reveal">
 {% for post in site.posts %}
